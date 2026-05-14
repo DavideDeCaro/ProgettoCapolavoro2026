@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html class="light" lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IMUN - Capolavoro 2026 | Davide De Caro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-bright": "#f7f9fb",
+          "on-secondary-container": "#59666f",
+          "on-primary-fixed-variant": "#8e0f28",
+          "on-tertiary-fixed-variant": "#394953",
+          "secondary-fixed-dim": "#bac8d3",
+          "on-secondary-fixed": "#101d25",
+          "inverse-on-surface": "#eff1f3",
+          "surface-tint": "#af2b3e",
+          "on-secondary-fixed-variant": "#3b4851",
+          "surface-container-highest": "#e0e3e5",
+          "on-error-container": "#93000a",
+          "tertiary-fixed": "#d4e5f1",
+          "surface-variant": "#e0e3e5",
+          "secondary-fixed": "#d6e4ef",
+          "on-tertiary": "#ffffff",
+          "on-background": "#191c1e",
+          "outline": "#8c7071",
+          "surface": "#f7f9fb",
+          "on-surface": "#191c1e",
+          "surface-container": "#eceef0",
+          "surface-container-high": "#e6e8ea",
+          "on-tertiary-container": "#99aab5",
+          "primary-fixed": "#ffdada",
+          "on-secondary": "#ffffff",
+          "tertiary": "#192932",
+          "secondary": "#536069",
+          "inverse-surface": "#2d3133",
+          "primary-container": "#800020",
+          "tertiary-container": "#2f3f49",
+          "on-error": "#ffffff",
+          "outline-variant": "#e0bfbf",
+          "inverse-primary": "#ffb3b5",
+          "on-primary-container": "#ff828a",
+          "surface-container-low": "#f2f4f6",
+          "on-surface-variant": "#584141",
+          "primary-fixed-dim": "#ffb3b5",
+          "background": "#f7f9fb",
+          "primary": "#570013",
+          "tertiary-fixed-dim": "#b8c9d5",
+          "surface-dim": "#d8dadc",
+          "on-tertiary-fixed": "#0d1d26",
+          "on-primary": "#ffffff",
+          "error-container": "#ffdad6",
+          "secondary-container": "#d6e4ef",
+          "error": "#ba1a1a",
+          "surface-container-lowest": "#ffffff",
+          "on-primary-fixed": "#40000b"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "stack-gap": "16px",
+          "section-padding": "96px",
+          "container-max": "1280px",
+          "gutter": "24px",
+          "unit": "8px"
+        },
+        "fontFamily": {
+          "h2": ["Manrope"],
+          "h1": ["Manrope"],
+          "display": ["Manrope"],
+          "label": ["Manrope"],
+          "body-lg": ["Manrope"],
+          "h3": ["Manrope"],
+          "body-md": ["Manrope"]
+        },
+        "fontSize": {
+          "h2": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+          "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "display": ["60px", {"lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "800"}],
+          "label": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+          "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+          "h3": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+          "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+        }
+      }
+    }
+  }
+</script>
+<style>
+  body { font-family: 'Manrope', sans-serif; }
+  .shred-divider-bottom {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 40L1440 40V0C1420.5 25.5 1395.5 12 1380 20C1355.5 32.5 1320.5 15 1300 18C1275.5 21.5 1250.5 35 1225 32C1200.5 29.5 1180.5 12 1150 15C1125.5 17.5 1100.5 30 1075 28C1050.5 25.5 1025.5 15 1000 18C975.5 21.5 950.5 35 925 32C900.5 29.5 875.5 15 850 18C825.5 21.5 800.5 35 775 32C750.5 29.5 725.5 15 700 18C675.5 21.5 650.5 35 625 32C600.5 29.5 575.5 15 550 18C525.5 21.5 500.5 35 475 32C450.5 29.5 425.5 15 400 18C375.5 21.5 350.5 35 325 32C300.5 29.5 275.5 15 250 18C225.5 21.5 200.5 35 175 32C150.5 29.5 125.5 15 100 18C75.5 21.5 50.5 35 25 32C10.5 30.5 5.5 15 0 10V40Z" fill="%23800020"/></svg>');
+    background-size: cover;
+    background-position: bottom;
+    z-index: 10;
+  }
+  .shred-divider-top {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L1440 0V40C1420.5 14.5 1395.5 28 1380 20C1355.5 7.5 1320.5 25 1300 22C1275.5 18.5 1250.5 5 1225 8C1200.5 10.5 1180.5 28 1150 25C1125.5 22.5 1100.5 10 1075 12C1050.5 14.5 1025.5 25 1000 22C975.5 18.5 950.5 5 925 8C900.5 10.5 875.5 25 850 22C825.5 18.5 800.5 5 775 8C750.5 10.5 725.5 25 700 22C675.5 18.5 650.5 5 625 8C600.5 10.5 575.5 25 550 22C525.5 18.5 500.5 5 475 8C450.5 10.5 425.5 25 400 22C375.5 18.5 350.5 5 325 8C300.5 10.5 275.5 25 250 22C225.5 18.5 200.5 5 175 8C150.5 10.5 125.5 25 100 22C75.5 18.5 50.5 5 25 8C10.5 9.5 5.5 25 0 30V0Z" fill="%23dbe9f4"/></svg>');
+    background-size: cover;
+    background-position: top;
+    z-index: 10;
+    transform: scaleY(-1);
+  }
+  .shred-divider-bottom-light {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 40L1440 40V0C1420.5 25.5 1395.5 12 1380 20C1355.5 32.5 1320.5 15 1300 18C1275.5 21.5 1250.5 35 1225 32C1200.5 29.5 1180.5 12 1150 15C1125.5 17.5 1100.5 30 1075 28C1050.5 25.5 1025.5 15 1000 18C975.5 21.5 950.5 35 925 32C900.5 29.5 875.5 15 850 18C825.5 21.5 800.5 35 775 32C750.5 29.5 725.5 15 700 18C675.5 21.5 650.5 35 625 32C600.5 29.5 575.5 15 550 18C525.5 21.5 500.5 35 475 32C450.5 29.5 425.5 15 400 18C375.5 21.5 350.5 35 325 32C300.5 29.5 275.5 15 250 18C225.5 21.5 200.5 35 175 32C150.5 29.5 125.5 15 100 18C75.5 21.5 50.5 35 25 32C10.5 30.5 5.5 15 0 10V40Z" fill="%23dbe9f4"/></svg>');
+    background-size: cover;
+    background-position: bottom;
+    z-index: 10;
+  }
+  .shred-divider-top-dark {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L1440 0V40C1420.5 14.5 1395.5 28 1380 20C1355.5 7.5 1320.5 25 1300 22C1275.5 18.5 1250.5 5 1225 8C1200.5 10.5 1180.5 28 1150 25C1125.5 22.5 1100.5 10 1075 12C1050.5 14.5 1025.5 25 1000 22C975.5 18.5 950.5 5 925 8C900.5 10.5 875.5 25 850 22C825.5 18.5 800.5 5 775 8C750.5 10.5 725.5 25 700 22C675.5 18.5 650.5 5 625 8C600.5 10.5 575.5 25 550 22C525.5 18.5 500.5 5 475 8C450.5 10.5 425.5 25 400 22C375.5 18.5 350.5 5 325 8C300.5 10.5 275.5 25 250 22C225.5 18.5 200.5 5 175 8C150.5 10.5 125.5 25 100 22C75.5 18.5 50.5 5 25 8C10.5 9.5 5.5 25 0 30V0Z" fill="%23800020"/></svg>');
+    background-size: cover;
+    background-position: top;
+    z-index: 10;
+    transform: scaleY(-1);
+  }
+  .award-badge {
+    background: linear-gradient(135deg, #800020 0%, #570013 100%);
+    border: 2px solid rgba(255,179,181,0.3);
+  }
+  iframe {
+    display: block;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.6s cubic-bezier(0.22,1,0.36,1),
+                transform 0.6s cubic-bezier(0.22,1,0.36,1);
+    will-change: opacity, transform;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  .reveal-group > * { opacity: 0; transform: translateY(28px);
+    transition: opacity 0.55s cubic-bezier(0.22,1,0.36,1),
+                transform 0.55s cubic-bezier(0.22,1,0.36,1);
+    will-change: opacity, transform;
+  }
+  .reveal-group.visible > *:nth-child(1) { opacity:1; transform:none; transition-delay:0s; }
+  .reveal-group.visible > *:nth-child(2) { opacity:1; transform:none; transition-delay:.1s; }
+  .reveal-group.visible > *:nth-child(3) { opacity:1; transform:none; transition-delay:.2s; }
+  .reveal-group.visible > *:nth-child(4) { opacity:1; transform:none; transition-delay:.3s; }
+  .reveal-group.visible > *:nth-child(5) { opacity:1; transform:none; transition-delay:.4s; }
+  .reveal-group.visible > *:nth-child(6) { opacity:1; transform:none; transition-delay:.5s; }
+
+  .reveal-left  { opacity:0; transform:translateX(-36px);
+    transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1),
+                transform 0.65s cubic-bezier(0.22,1,0.36,1);
+    will-change: opacity, transform;
+  }
+  .reveal-right { opacity:0; transform:translateX(36px);
+    transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1),
+                transform 0.65s cubic-bezier(0.22,1,0.36,1);
+    will-change: opacity, transform;
+  }
+  .reveal-left.visible,
+  .reveal-right.visible { opacity:1; transform:none; }
+
+  .stat-num { display:inline-block; }
+
+  @keyframes blob-drift {
+    0%, 100% { transform: translate(0,0) scale(1); }
+    33%       { transform: translate(18px,-14px) scale(1.08); }
+    66%       { transform: translate(-12px,10px) scale(0.95); }
+  }
+  .blob-animate { animation: blob-drift 9s ease-in-out infinite; }
+
+  @keyframes badge-glow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(255,179,181,0); }
+    50%       { box-shadow: 0 0 0 8px rgba(255,179,181,0.18); }
+  }
+  .award-badge { animation: badge-glow 3.5s ease-in-out infinite; }
+
+  header nav a { position: relative; }
+  header nav a::after {
+    content:''; position:absolute; bottom:-2px; left:0;
+    width:0; height:2px; background:#570013;
+    transition: width .3s cubic-bezier(0.22,1,0.36,1);
+  }
+  header nav a:hover::after { width:100%; }
+
+  .skill-card {
+    transition: transform 0.25s cubic-bezier(0.22,1,0.36,1),
+                box-shadow 0.25s ease;
+  }
+  .skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 4px 8px 0 0 rgba(128,0,32,0.35);
+  }
+
+  @keyframes count-up { from { opacity:0; } to { opacity:1; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal, .reveal-left, .reveal-right,
+    .reveal-group > *, .blob-animate, .award-badge { animation:none !important; transition:none !important; opacity:1 !important; transform:none !important; }
+  }
+</style>
+</head>
+<body class="bg-surface-bright text-on-surface antialiased overflow-x-hidden">
+
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-gutter py-4 bg-surface-bright border-b border-outline-variant shadow-sm">
+  <div class="flex items-center gap-3">
+    <img src="/assets/logo.png" alt="Logo" class="h-9 w-auto object-contain" onerror="this.style.display='none'"/>
+    <span class="font-display text-h3 font-extrabold tracking-tighter text-primary">IMUN · Capolavoro</span>
+  </div>
+  <nav class="hidden md:flex gap-8">
+    <a class="text-primary border-b-2 border-primary font-label text-label hover:text-primary transition-colors duration-300" href="#cose">Cos'è IMUN</a>
+    <a class="text-on-secondary-container font-label text-label hover:text-primary transition-colors duration-300" href="#esperienze">Esperienze</a>
+    <a class="text-on-secondary-container font-label text-label hover:text-primary transition-colors duration-300" href="#video">Video</a>
+    <a class="text-on-secondary-container font-label text-label hover:text-primary transition-colors duration-300" href="#riflessione">Riflessione</a>
+  </nav>
+  <a href="#esperienze" class="bg-primary-container text-on-primary px-6 py-3 font-label text-label shadow-[2px_2px_0px_0px_rgba(128,0,32,1)] hover:-translate-y-1 transition-transform duration-200">
+    Esplora
+  </a>
+</header>
+
+<section class="relative pt-32 pb-24 bg-[#dbe9f4] min-h-[85vh] flex items-center">
+  <div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-gutter items-center z-20 relative">
+    <div class="md:col-span-7 space-y-stack-gap reveal-left">
+      <span class="inline-block px-3 py-1 bg-primary-container text-on-primary font-label text-label shadow-[2px_2px_0px_0px_rgba(128,0,32,1)]">CAPOLAVORO · A.S. 2024–2026</span>
+      <h1 class="font-display text-display text-tertiary leading-tight">Italian Model<br/>United Network</h1>
+      <p class="font-body-lg text-body-lg text-secondary max-w-xl">
+        La più grande simulazione diplomatica delle Nazioni Unite in Europa. Due anni come delegato internazionale, e la nostra risoluzione presentata davanti a oltre mille studenti al Teatro Brancaccio di Roma.
+      </p>
+      <div class="pt-stack-gap">
+        <a href="#esperienze" class="bg-primary-container text-on-primary px-8 py-4 font-label text-label shadow-[2px_2px_0px_0px_rgba(128,0,32,1)] hover:-translate-y-1 transition-transform duration-200 inline-flex items-center gap-2">
+          La mia esperienza
+          <span class="material-symbols-outlined">arrow_downward</span>
+        </a>
+      </div>
+    </div>
+    <div class="md:col-span-5 relative mt-12 md:mt-0 reveal-right">
+      <div class="relative z-10 bg-surface-bright p-unit border border-surface-variant shadow-[4px_4px_0px_0px_rgba(128,0,32,1)] rotate-2 hover:rotate-0 transition-transform duration-500">
+        <img
+          src="/assets/logo.png"
+          alt="IMUN - Italian Model United Nations"
+          class="w-full h-auto object-cover border border-outline-variant"
+          onerror="this.parentElement.innerHTML='<div class=\'bg-surface-container flex items-center justify-center aspect-[4/3] text-on-secondary-container text-sm text-center p-4\'><span class=\'material-symbols-outlined text-4xl mb-2 block\'>image</span>Carica /assets/certificatopertini.jpg</div>'"
+        />
+      </div>
+      <div class="absolute -top-12 -left-12 w-48 h-48 bg-primary-fixed rounded-full opacity-50 blur-3xl -z-10 blob-animate"></div>
+    </div>
+  </div>
+  <div class="shred-divider-bottom"></div>
+</section>
+
+<section id="cose" class="relative bg-primary-container text-on-primary py-section-padding">
+  <div class="max-w-container-max mx-auto px-gutter">
+    <div class="text-center max-w-3xl mx-auto space-y-stack-gap mb-16 reveal">
+      <span class="inline-block px-3 py-1 bg-surface-tint text-on-primary font-label text-label opacity-80">Il Progetto</span>
+      <h2 class="font-h2 text-h2 text-on-primary">Che cos'è IMUN?</h2>
+      <p class="font-body-lg text-body-lg text-primary-fixed-dim">
+        IMUN (Italian Model United Nations) è la più grande simulazione di processi diplomatici delle Nazioni Unite in Europa, organizzata da <strong>United Network</strong>. Permette agli studenti delle scuole secondarie di secondo grado di vestire i panni di delegati internazionali, affrontando le grandi sfide del nostro tempo attraverso il dialogo, la negoziazione e la redazione di risoluzioni condivise.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-gutter text-center mb-16 reveal-group">
+      <div class="bg-surface-tint/20 border border-primary-fixed/20 p-8">
+        <div class="font-display text-[48px] font-extrabold text-on-primary stat-num" data-target="2">2</div>
+        <div class="font-label text-label text-primary-fixed-dim mt-1">Anni di partecipazione</div>
+      </div>
+      <div class="bg-surface-tint/20 border border-primary-fixed/20 p-8">
+        <div class="font-display text-[48px] font-extrabold text-on-primary stat-num" data-target="1000" data-suffix="+">1000+</div>
+        <div class="font-label text-label text-primary-fixed-dim mt-1">Studenti presenti al Brancaccio</div>
+      </div>
+      <div class="bg-surface-tint/20 border border-primary-fixed/20 p-8">
+        <div class="font-display text-[48px] font-extrabold text-on-primary stat-num" data-target="3">3</div>
+        <div class="font-label text-label text-primary-fixed-dim mt-1">Premi ottenuti</div>
+      </div>
+    </div>
+  </div>
+  <div class="shred-divider-bottom-light"></div>
+</section>
+
+<section id="esperienze" class="relative bg-[#dbe9f4] py-section-padding">
+  <div class="shred-divider-top"></div>
+  <div class="max-w-container-max mx-auto px-gutter mt-10 space-y-24">
+
+    <div class="text-center max-w-2xl mx-auto space-y-stack-gap reveal">
+      <h2 class="font-h2 text-h2 text-tertiary">Le mie esperienze</h2>
+      <p class="font-body-md text-body-md text-secondary">Due anni di simulazione, due commissioni, due nazioni da rappresentare.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+      <div class="md:col-span-6 relative reveal-left">
+        <div class="bg-surface-bright p-unit border border-surface-variant shadow-[4px_4px_0px_0px_rgba(128,0,32,1)] -rotate-1 hover:rotate-0 transition-transform duration-500">
+          <img
+            src="/assets/certificatopertini.jpg"
+            alt="Premio Best Medium Delegation al Liceo Pertini"
+            class="w-full aspect-[4/3] object-cover"
+            onerror="this.parentElement.innerHTML='<div class=\'bg-surface-container flex items-center justify-center aspect-[4/3] text-on-secondary-container text-sm text-center p-4\'><span class=\'material-symbols-outlined text-4xl mb-2 block\'>emoji_events</span>Carica /assets/certificatopertini.jpg</div>'"
+          />
+        </div>
+      </div>
+      <div class="md:col-span-5 md:col-start-8 space-y-stack-gap reveal-right">
+        <span class="inline-block px-3 py-1 bg-surface-tint text-on-primary font-label text-label shadow-[2px_2px_0px_0px_rgba(255,255,255,0.2)]">A.S. 2024/2025</span>
+        <h3 class="font-h3 text-h3 text-tertiary">Commissione UNHCR · Delegato dell'Iraq</h3>
+        <p class="font-body-md text-body-md text-secondary">
+          Nella prima simulazione ho rappresentato l'Iraq nella commissione UNHCR, lavorando su strategie globali per la protezione dei rifugiati e la gestione delle crisi umanitarie in Medio Oriente. Tra oltre 100 studenti in sala, io e una compagna abbiamo avuto l'opportunità di presentare in inglese la nostra risoluzione finale sul palco del <strong>Teatro Brancaccio di Roma</strong> davanti a oltre mille partecipanti.
+        </p>
+        <div class="award-badge inline-flex items-center gap-3 px-4 py-3 text-on-primary rounded-sm mt-2">
+          <span class="material-symbols-outlined text-2xl">emoji_events</span>
+          <div>
+            <div class="font-label text-label">🏆 Best Medium Delegation</div>
+            <div class="text-xs text-primary-fixed-dim mt-0.5">Liceo Sandro Pertini di Ladispoli · IMUN 2025</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 text-sm text-secondary mt-1">
+          <span class="material-symbols-outlined text-base text-surface-tint">star</span>
+          <span>Menzione onorevole individuale</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+      <div class="md:col-span-5 space-y-stack-gap md:order-1 order-2 reveal-left">
+        <span class="inline-block px-3 py-1 bg-surface-tint text-on-primary font-label text-label shadow-[2px_2px_0px_0px_rgba(255,255,255,0.2)]">A.S. 2025/2026</span>
+        <h3 class="font-h3 text-h3 text-tertiary">Commissione SPECPOL · Delegato del Canada</h3>
+        <p class="font-body-md text-body-md text-secondary">
+          Nella seconda simulazione ho rappresentato il Canada nella commissione SPECPOL, approfondendo tematiche politiche ancora più complesse legate alla <strong>decolonizzazione dei territori non autonomi</strong> e alle dispute di sovranità territoriale ancora aperte. Un'esperienza che ha richiesto una preparazione tematica più profonda e capacità negoziali ancora più raffinate.
+        </p>
+        <div class="flex items-center gap-2 text-sm text-secondary mt-1">
+          <span class="material-symbols-outlined text-base text-surface-tint">star</span>
+          <span>Menzione onorevole individuale</span>
+        </div>
+      </div>
+      <div class="md:col-span-6 md:col-start-7 relative md:order-2 order-1 reveal-right">
+        <div class="bg-surface-bright p-unit border border-surface-variant shadow-[4px_4px_0px_0px_rgba(128,0,32,1)] -rotate-1 hover:rotate-0 transition-transform duration-500">
+		  <img
+					src="/assets/canada.jpg"
+			alt="Commissione SPECPOL – Canada"
+			class="w-full h-full object-cover"
+			onerror="this.parentElement.innerHTML='<div class=\'bg-surface-container flex items-center justify-center w-full h-full text-on-secondary-container text-sm text-center p-4\'><span class=\'material-symbols-outlined text-4xl mb-2 block\'>image</span>Carica /assets/canada.jpg</div>'"
+		  />
+		</div>
+    </div>
+
+  </div>
+</section>
+
+<section id="video" class="relative bg-primary-container py-section-padding">
+  <div class="shred-divider-top-dark"></div>
+  <div class="max-w-container-max mx-auto px-gutter mt-10">
+    <div class="text-center mb-16 reveal">
+      <span class="inline-block px-3 py-1 bg-surface-tint/30 text-on-primary font-label text-label mb-4">I Video</span>
+      <h2 class="font-h2 text-h2 text-on-primary">Registrazioni effettuate durante le sessioni di simulazione IMUN</h2>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start reveal-group">
+
+      <div class="lg:col-start-2 lg:col-span-6 flex flex-col gap-4">
+        <div class="bg-surface-bright p-2 border border-surface-variant shadow-[4px_4px_0px_0px_rgba(255,255,255,0.25)] overflow-hidden aspect-[9/16]">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/CMHgR0GDHuA?si=oslPmwqdbm0z5Pqm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="space-y-2 pt-4 border-t border-outline-variant">
+          <h4 class="font-label text-label text-on-primary">A.S. 2024/2025 · Commissione UNHCR</h4>
+          <p class="font-body-md text-body-md text-primary-fixed-dim">Discorso integrale di presentazione della Draft Resolution 1.1 da parte di Davide De Caro (Iraq) e Alice Gera (Russian Federation) al Teatro Brancaccio di Roma.</p>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 flex flex-col gap-4 lg:mt-32">
+        <div class="bg-surface-bright p-2 border border-surface-variant shadow-[4px_4px_0px_0px_rgba(255,255,255,0.25)] overflow-hidden aspect-[9/16] max-h-[560px]">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/CPTkCMa3NHQ?si=e_Cpz45xKtneU3BC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="space-y-2 pt-4 border-t border-outline-variant">
+          <h4 class="font-label text-label text-on-primary">A.S. 2025/2026 · Commissione SPECPOL</h4>
+          <p class="font-body-md text-body-md text-primary-fixed-dim">Discorso come delegato del Canada pubblicato dall'account ufficiale di United Network su Instagram. Intervento sulle tematiche di decolonizzazione e sovranità territoriale.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="riflessione" class="relative bg-[#dbe9f4] py-section-padding">
+  <div class="shred-divider-top"></div>
+  <div class="max-w-container-max mx-auto px-gutter mt-10">
+
+    <div class="text-center max-w-2xl mx-auto space-y-stack-gap mb-16 reveal">
+      <span class="inline-block px-3 py-1 bg-surface-tint text-on-primary font-label text-label">Perché questo Capolavoro</span>
+      <h2 class="font-h2 text-h2 text-tertiary">Motivazione, Competenze e Riflessione</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start mb-20">
+      <div class="md:col-span-6 space-y-stack-gap reveal-left">
+        <h3 class="font-h3 text-h3 text-tertiary">Perché ho scelto IMUN come Capolavoro</h3>
+        <p class="font-body-md text-body-md text-secondary">
+          Ho scelto questo progetto perché, discutendo tematiche di importanza internazionale, sono riuscito a sviluppare competenze di comunicazione efficace, lavoro di squadra e risoluzione di problemi a livello globale. Rispetto all'esperienza del <em>Podcast Novus</em>, che ho pubblicato l'anno precedente, dove mi occupavo principalmente dell'organizzazione del team e degli ospiti, qui ho dovuto imparare a <strong>negoziare</strong> e a confrontarmi con idee provenienti da decine di delegati differenti per raggiungere un obiettivo comune e <strong>rappresentare la voce di ciascuno nel discorso finale.</strong>
+        </p>
+      </div>
+      <div class="md:col-span-5 md:col-start-8">
+        <div class="grid grid-cols-2 gap-4 reveal-group">
+          <div class="bg-surface-bright border border-surface-variant p-5 shadow-[2px_2px_0px_0px_rgba(128,0,32,0.3)] skill-card">
+            <span class="material-symbols-outlined text-2xl text-surface-tint block mb-2">record_voice_over</span>
+            <div class="font-label text-label text-tertiary">Public Speaking</div>
+            <div class="text-xs text-secondary mt-1">In inglese, davanti a 1000+ persone</div>
+          </div>
+          <div class="bg-surface-bright border border-surface-variant p-5 shadow-[2px_2px_0px_0px_rgba(128,0,32,0.3)] skill-card">
+            <span class="material-symbols-outlined text-2xl text-surface-tint block mb-2">handshake</span>
+            <div class="font-label text-label text-tertiary">Negoziazione</div>
+            <div class="text-xs text-secondary mt-1">Costruire consenso tra delegati</div>
+          </div>
+          <div class="bg-surface-bright border border-surface-variant p-5 shadow-[2px_2px_0px_0px_rgba(128,0,32,0.3)] skill-card">
+            <span class="material-symbols-outlined text-2xl text-surface-tint block mb-2">groups</span>
+            <div class="font-label text-label text-tertiary">Teamwork</div>
+            <div class="text-xs text-secondary mt-1">Collaborazione interistituzionale</div>
+          </div>
+          <div class="bg-surface-bright border border-surface-variant p-5 shadow-[2px_2px_0px_0px_rgba(128,0,32,0.3)] skill-card">
+            <span class="material-symbols-outlined text-2xl text-surface-tint block mb-2">quick_reference_all</span>
+            <div class="font-label text-label text-tertiary">Problem Solving</div>
+            <div class="text-xs text-secondary mt-1">Sfide diplomatiche globali</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-surface-bright border border-surface-variant shadow-[4px_4px_0px_0px_rgba(128,0,32,0.4)] p-10 md:p-14 relative -rotate-0 reveal">
+      <div class="absolute top-0 left-0 w-1.5 h-full bg-primary-container rounded-sm"></div>
+      <div class="pl-6 space-y-5">
+        <h3 class="font-h3 text-h3 text-tertiary">Dibattito e Riflessione</h3>
+        <p class="font-body-md text-body-md text-secondary">
+          Una delle difficoltà principali è stata la necessità di <strong>adattarsi rapidamente ai dibattiti</strong> durante le sessioni, ascoltando i punti avanzati dai delegati delle altre nazioni e dimostrare consenso o contestarli in discorsi effettuati sul momento, non preparati in precedenza. Questo mi ha permesso di sviluppare una conoscenza attiva e consapevole sia sui temi trattati che sulle mie capacità personali.
+        </p>
+        <p class="font-body-md text-body-md text-secondary">
+          In conclusione, essendo ormai considerato un <strong>delegato Senior</strong>, ho intenzione di trasmettere questa esperienza e le competenze acquisite ai prossimi studenti, offrendomi come <strong>Chair</strong>, ovvero come moderatore, durante la prossima simulazione.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="w-full py-12 px-gutter flex flex-col md:flex-row justify-between items-center gap-stack-gap bg-tertiary text-on-tertiary font-body-md text-body-md relative z-20">
+  <div class="flex items-center gap-3">
+    <img src="/assets/logo.png" alt="Logo" class="h-8 w-auto object-contain opacity-80" onerror="this.style.display='none'"/>
+    <span class="font-display text-h3 font-bold text-on-tertiary">IMUN · Capolavoro</span>
+  </div>
+  <div class="text-center">
+    <div class="font-label text-label text-on-tertiary">Davide De Caro</div>
+    <div class="text-on-tertiary-container text-sm mt-1">Liceo Sandro Pertini · Ladispoli</div>
+  </div>
+  <div class="text-on-tertiary-container text-sm">
+    © 2026 · Italian Model United Nations
+  </div>
+</footer>
+<script>
+(function () {
+  const selectors = '.reveal, .reveal-left, .reveal-right, .reveal-group';
+  const els = document.querySelectorAll(selectors);
+
+  if (!('IntersectionObserver' in window)) {
+    els.forEach(el => el.classList.add('visible'));
+    return;
+  }
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  els.forEach(el => io.observe(el));
+
+  const statEls = document.querySelectorAll('.stat-num[data-target]');
+  const statIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      statIO.unobserve(entry.target);
+      const el = entry.target;
+      const target = parseInt(el.dataset.target, 10);
+      const suffix = el.dataset.suffix || '';
+      const duration = 900;
+      const start = performance.now();
+      const startVal = Math.max(0, target - (target > 100 ? 300 : target));
+
+      function tick(now) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        // ease-out cubic
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = Math.round(startVal + (target - startVal) * eased);
+        el.textContent = current + suffix;
+        if (progress < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    });
+  }, { threshold: 0.5 });
+
+  statEls.forEach(el => statIO.observe(el));
+
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('header nav a[href^="#"]');
+
+  const navIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => {
+          a.classList.remove('border-b-2', 'border-primary', 'text-primary');
+          a.classList.add('text-on-secondary-container');
+        });
+        const active = document.querySelector(`header nav a[href="#${entry.target.id}"]`);
+        if (active) {
+          active.classList.add('border-b-2', 'border-primary', 'text-primary');
+          active.classList.remove('text-on-secondary-container');
+        }
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+
+  sections.forEach(s => navIO.observe(s));
+})();
+</script>
+
+</body>
